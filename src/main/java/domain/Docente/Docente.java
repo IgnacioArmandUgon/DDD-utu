@@ -1,5 +1,6 @@
 package domain.Docente;
 
+import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.Entity;
 import domain.Docente.value.*;
 import domain.Grupo.value.Dia;
@@ -9,7 +10,7 @@ import domain.Orientación.value.IdMateria;
 
 import java.util.ArrayList;
 
-public class Docente extends Entity<DocenteCI> {
+public class Docente extends AggregateEvent<DocenteCI> {
     private Nombre nombre;
     private Edad edad;
     private Mail mail;

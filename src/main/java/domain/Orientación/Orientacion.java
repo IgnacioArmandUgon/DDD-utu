@@ -1,5 +1,6 @@
 package domain.Orientación;
 
+import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.Entity;
 import domain.Grupo.Grupo;
 import domain.Orientación.value.Duracion;
@@ -7,7 +8,7 @@ import domain.Orientación.value.IdOrientacion;
 
 import java.util.ArrayList;
 
-public class Orientacion extends Entity<IdOrientacion> {
+public class Orientacion extends AggregateEvent<IdOrientacion> {
     private Duracion duracion;
     private ArrayList<Materia> materias;
     private ArrayList<Grupo> grupos;

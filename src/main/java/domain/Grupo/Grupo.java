@@ -1,5 +1,6 @@
 package domain.Grupo;
 
+import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.Entity;
 import domain.Docente.value.Edad;
 import domain.Docente.value.Mail;
@@ -12,7 +13,7 @@ import domain.Orientación.value.IdOrientacion;
 
 import java.util.ArrayList;
 
-public class Grupo extends Entity<IdGrupo> {
+public class Grupo extends AggregateEvent<IdGrupo> {
     private Adscripta adscripta;
     private HorarioGrupo horarioGrupo;
     private ArrayList<Alumno> alumnos;
